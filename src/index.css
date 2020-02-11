@@ -8,6 +8,9 @@ body {
 
 .header {
   font-family: 'PT Sans', sans-serif;
+  text-transform: uppercase;
+  color: #fdf353;
+  letter-spacing: 3px;
 }
 
 h1 {
