@@ -1,0 +1,8 @@
+.Landing.mainContainer {
+  max-width: 700px;
+  margin-left: calc((100vw - 700px) / 2);
+}
+
+.Landing.mainContainer > p {
+  text-align: left;
+}
