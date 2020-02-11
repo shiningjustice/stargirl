@@ -1,0 +1,23 @@
+ul.Nav {
+  padding: .75em; 
+  display: flex;
+}
+
+li {
+  margin: 0 15px 0 0;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+li.logout {
+  margin: 0 0 0 auto;
+}
+
+a {
+  color: black;
+}
+
+li:hover {
+  border-bottom: solid 3pt #fdf353;
+  cursor: pointer;
+}
