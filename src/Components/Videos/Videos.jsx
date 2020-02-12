@@ -9,7 +9,7 @@ function Videos() {
   
     return videos.map((video, index) => 
       <div key={index}>
-        <h2 className='header sup'>{video.title}</h2>
+        <h2 className='header'>{video.title}</h2>
         <iframe 
         title={index}
         width="560" 
