@@ -4,8 +4,8 @@ ul.Nav {
 }
 
 li {
-  /* includes bottom margin increase to remove when hovering, per the bottom border */
-  margin: 0 15px 4px 0;
+    margin-right: 15px;
+  border-bottom: solid 3pt transparent;
   text-decoration: none;
   font-weight: 600;
 }
@@ -18,8 +18,8 @@ a {
   color: black;
 }
 
-li:hover {
+.Nav > li:hover {
   margin-bottom: 0;
-  border-bottom: solid 3pt #fdf353;
+  border-bottom-color: #fdf353;
   cursor: pointer;
 }
