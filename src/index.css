@@ -16,23 +16,23 @@ body {
 
 h1.header {
   color: #fdf353;
+  letter-spacing: 5px;
 }
 
 h2.header {
+  /* makes h2 "vintage-label" like with green 
+  background, white text */
   background: #aecb4a;
   color: white;
   width: max-content;
   padding: .25em .5em;
-  margin: 1em auto;
-  text-justify: center;
-  text-align: center;
-  position: relative;
 }
 
 .header {
   font-family: 'PT Sans', sans-serif;
   text-transform: uppercase;
   letter-spacing: 3px;
+  margin: 1em auto;
 }
 
 
