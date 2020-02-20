@@ -1,4 +1,39 @@
 const dataStore = {
+  photos: [
+    {
+      src: 'https://via.placeholder.com/400'
+    },
+    {
+      src: 'https://via.placeholder.com/600'
+    },
+    {
+      src: 'https://via.placeholder.com/400x600'
+    },
+    {
+      src: 'https://via.placeholder.com/600'
+    },
+    {
+      src: 'https://via.placeholder.com/400x600'
+    },
+    {
+      src: 'https://via.placeholder.com/600'
+    },
+    {
+      src: 'https://via.placeholder.com/600'
+    },
+    {
+      src: 'https://via.placeholder.com/400x600'
+    },
+    {
+      src: 'https://via.placeholder.com/600'
+    },
+    {
+      src: 'https://via.placeholder.com/600x400'
+    },
+    {
+      src: 'https://via.placeholder.com/400x600'
+    },
+  ],
   videos: [
     {
       title: "Happy Birthday Hannah (2010)", 
