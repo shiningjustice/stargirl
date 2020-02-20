@@ -8,7 +8,7 @@ function Videos() {
     const videos = dataStore.videos;
   
     return videos.map((video, index) => 
-      <div key={index}>
+      <div key={index} className='video'>
         <h2 className='header'>{video.title}</h2>
         <iframe 
         title={index}
