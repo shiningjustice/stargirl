@@ -1,3 +1,10 @@
+nav {
+  position: sticky; position: -webkit-sticky;
+  top: 0; left: 0;
+  z-index: 1000;
+  background-color: rgb(5,168,206,.5);
+}
+
 ul.Nav {
   padding: .75em; 
   display: flex;
