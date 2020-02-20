@@ -1,0 +1,30 @@
+.Photos {
+  max-width: 780px;
+  margin: 0 auto;
+}
+.PhotosWrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px; 
+}
+.Photo {
+  padding: 0; margin: 0;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
+
+/* for larger than small laptop screens, add a fourth 
+column */
+@media screen and (min-width: 1440px) {
+  .Photos {
+    max-width: 1192px;
+  }
+  .PhotosWrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .Photo {
+    width: 288px;
+    height: 288px;
+  }
+}
