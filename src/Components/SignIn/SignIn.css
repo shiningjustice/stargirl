@@ -1,26 +1,4 @@
-.mainContainer.SignIn {
-  width: 400px;
-  height: 200px;
-  padding: 1em;
+.SignIn {
+  /* centers SignIn */
+  margin-top: calc((100vh - 593px)/2);
 }
-
-form.SignIn > * {
-  width: 250px;
-  height: 30px;
-  margin: 0 auto .5em calc((100% - 250px) / 2);
-  display: block;
-  background-color: inherit;
-  border: none;
-  border-bottom: solid 1px gray;
-  text-align: center;
-  font-size: 15pt;
-  color: #aecb4a;
-  font-weight: 600;
-}
-
-::placeholder {
-  color: #fdf353;
-  font-weight: 500;
-  font-style: italic;
-}
-

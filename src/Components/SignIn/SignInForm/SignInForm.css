@@ -1,0 +1,33 @@
+form.SignInForm > * {
+  width: 250px;
+  margin: 0 auto .5em calc((100% - 250px) / 2);
+  /* padding: .5em; */
+  display: block;
+  background-color: inherit;
+  border: none;
+  text-align: center;
+  font-size: 15pt;
+  color: #aecb4a;
+  font-weight: 600;
+}
+
+.SignInForm > label {
+  width: max-content;
+  padding: .25em .5em;
+  border-bottom: none;
+  text-align: center;
+  background: #aecb4a;
+  color: white;
+  margin-left: auto;
+}
+.SignInForm > input {
+  font-style: italic;
+  border-bottom: solid 1px gray;
+}
+
+::placeholder {
+  color: #fdf353;
+  font-weight: 500;
+  font-style: italic;
+}
+
