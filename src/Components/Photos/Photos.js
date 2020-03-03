@@ -1,23 +1,47 @@
 import React from 'react';
-import dataStore from '../../helpers/dataStore';
+import PhotosService from '../../services/photos-api-service';
 import './Photos.css';
 
-function Photos() {
-  const formatPhotoHtml = () => {
-    const photos = dataStore.photos;
+class Photos extends React.Component {
+  state = {
+    photos: [],
+    error: null
+  }
+
+  formatPhotoHtml = () => {
+    const photos = this.state.photos;
 
     return photos.map((photo, index) => (
-      <img className="Photo" key={index} src={photo.src} />
+      <img className="Photo" key={index} src={photo.photo_url} alt={photo.photo_description} />
     ))
   }
-  return (
-    <div className="Photos">
-      <h1 className="header">Photos</h1>
-      <div className="PhotosWrapper">
-        {formatPhotoHtml()}
+
+  componentDidMount() {
+    PhotosService.getPhotos()
+      .then(res => {
+        this.setState({
+          photos: res,
+          error: null,
+        })
+      })
+      .catch(error => this.setState(error))
+  }
+
+  render () {
+    const error = this.state.error;
+
+    return (
+      <div className="Photos">
+        <h1 className="header">Photos</h1>
+        <div role='alert' className='italic'>
+          {error && <p className='alert'>{error}</p>}
+        </div>
+        <div className="PhotosWrapper">
+          {this.formatPhotoHtml()}
+        </div>
       </div>
-    </div>
-  )
+    )
+  }
 }
 
 export default Photos;
