@@ -1,5 +1,5 @@
 nav {
-  position: sticky; position: -webkit-sticky;
+  position: sticky;
   top: 0; left: 0;
   z-index: 1000;
   background-color: rgb(5,168,206,.5);
