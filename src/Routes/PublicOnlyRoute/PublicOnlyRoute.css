@@ -1,0 +1,7 @@
+.PublicOnlyRoute {
+  /* set at 75% instead of 100 because 100% adds extra (adds a scrollbar)
+  It starts counting its height at where the header starts, and doesn't include
+  header margin for some reason
+  */
+  height: 75%;
+}
